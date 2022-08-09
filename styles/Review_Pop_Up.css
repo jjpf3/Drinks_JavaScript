@@ -1,0 +1,131 @@
+.reviewModal {
+        display: none; /* Hidden by default */
+        position:fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow-y: auto; /* Enable scroll if needed */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+        -webkit-animation-name: fadeIn; /* Fade in the background */
+        -webkit-animation-duration: 0.4s;
+        animation-name: fadeIn;
+        animation-duration: 0.4s
+  }
+
+
+  
+  /* Modal Content */
+  .review-modal-content {
+    position: fixed;
+    right: 0;
+    top: 50px;
+    background-color: #fefefe;
+    width: 40%;
+    height: 700px;
+    -webkit-animation-name: slideIn;
+    -webkit-animation-duration: 0.4s;
+    animation-name: slideIn;
+    animation-duration: 0.4;
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+    font-size: 18px;
+    overflow-y: auto;
+
+  }
+
+
+  .review-modal-header {
+    padding: 5px 16px;
+    z-index:2;
+    position:relative;
+    top:-25px;
+    border-top-left-radius: 25px;
+    background-color: #0c2331;
+    color: white;
+  }
+  
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+
+    /* The Close Button */
+    .close {
+      color: rgb(54, 53, 53);
+      position:absolute;
+      top: 60px;
+      right: 30px;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+  
+    }
+    
+    /* Review stars position*/
+    .starReview{
+      position:relative;
+      left:10px;
+
+    }
+
+
+       /* Review Text Box*/
+
+    .rTextClass {
+      text-align: left;
+      vertical-align: top;
+      width: 70%;
+      height: 150px;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+
+    }
+
+
+    .rTextBorder {
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+    }
+
+
+  /* Add Animation */
+@-webkit-keyframes slideIn {
+    from {right: -300px; opacity: 0} 
+    to {right: 0; opacity: 1}
+  }
+  
+  @keyframes slideIn {
+    from {right: -300px; opacity: 0}
+    to {right: 0; opacity: 1}
+  }
+  
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0} 
+    to {opacity: 1}
+  }
+
+    /* The Close Button */
+  .close {
+    color: rgb(54, 53, 53);
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+
+  }

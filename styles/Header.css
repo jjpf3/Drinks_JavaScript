@@ -1,0 +1,92 @@
+
+ 
+ .logo{
+  padding: 20px;
+  position:absolute;
+  left:0px;
+  top:30px;
+  width:20%;
+  height:10%;
+ }
+ 
+ .header {
+    background-color: lightgrey;;
+    text-align: center;
+    padding: 20px;
+    font-family: Amazon Ember;
+    letter-spacing: 7px;
+    font-size: 25px;
+
+ }
+
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #0c2331;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    font-family: "Amazon Ember";
+    font-size: 20px;
+    height: 70px;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    font-family: "Amazon Ember";
+    color: white;
+    text-align: center;
+    padding: 20px 30px;
+    text-decoration: none;
+    font-size: 30px;
+    letter-spacing: 2px;
+    
+  }
+  
+  li a:hover:not(.active) {
+    background-color: rgb(237, 174, 0);
+  }
+  
+  .active {
+    background-color: rgb(173, 115, 0);
+  }
+
+  .station {
+    position:relative;
+    top: 10px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    height: 50px;
+    width: 30%;
+    padding: 2px 23px 2px 30px;
+    outline: 0;
+    background-color: #f5f5f5;
+    font-size: 24;
+  }
+
+  .labelstationc {
+  position: relative;
+  top: 10px;
+  font-size: 24;
+  }
+
+  .loginHeader{
+    position:relative;
+    top: -5px;
+    left:750px;
+    color: white;
+  }

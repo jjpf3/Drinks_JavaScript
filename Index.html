@@ -1,0 +1,155 @@
+
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>DSL Network Support</title>
+  <link rel="stylesheet" href="styles/Header.css">
+  <link rel="stylesheet" href="styles/Userform.css">
+  <link rel="stylesheet" href="styles/Userform.css">
+  <link rel="stylesheet" href="styles/Pop_Up.css">
+  <link rel="stylesheet" href="styles/Review_Pop_Up.css">
+
+  <script src="https://sdk.amazonaws.com/js/aws-sdk-2.7.16.min.js"></script>
+  <!--<img class="tick" id="tickTock" src="https://flyclipart.com/thumb2/green-tick-png-green-tick-icon-image-411325.png">-->
+</head>
+<script src=></script>
+<body>
+  
+  <div class="header">
+    <h1>Cocktail Party</h1>
+  </div>
+
+  <ul>
+    <li><a href="Index.html">Placeholder2</a></li>
+    <li><a class="active" href="Index.html">Cocktail Search</a></li>
+    <li><a href="Login.html">Logout</a></li>
+    <h2 class="loginHeader" id="loginIDText"></h2>
+  </ul>
+<div>
+
+<div>
+    <span class="labelstationc">Cocktail search</span>
+    <input class="station" type="text" id="cocktailSe" name="scode" placeholder="Cocktail...">
+</div>
+
+    <!-- The Modal -->
+<div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content" id="modalContent">
+      <span class="close" id="closeID" onclick="closeModal()">&times;</span>
+      <H1 class="modal-header">
+        Ingredients
+      </H1>
+      <div class="modal-body">
+        <body id="modalBody">
+            <div class="textClass">
+            <h1 id="drinkClass"></h1>
+            <p id="ing1"></p>
+            <p id="ing2"></p>
+            <p id="ing3"></p>
+            <p id="ing4"></p>
+            <p id="ing5"></p>
+            <p id="ing6"></p>
+            <p id="ing7"></p>
+            <p id="ing8"></p>
+            <p id="ing9"></p>
+            <p id="ing10"></p>
+            <p id="ing11"></p>
+            <p id="ing12"></p>
+            <p id="ing13"></p>
+            <p id="ing14"></p>
+            <p id="ing15"></p>
+        
+        </div>
+        <div id="imgP"></div>
+        <div class="instruClass">
+          <h2>Instructions</h2>
+      <p id="instructions" class="instruText"></p>
+      <p id="completed"></p>
+      </div>
+      <button class="doneBut" role="button" id="doneButID" onclick="reviewModelOpen()">Constructed</button>
+      <button class="doneBut" role="button" id="clearButID" onclick="customerReviewModelOpen()" position="relative" top="70px" right="-10px">Reviews</button>
+        </body>
+      </div>
+    </div>
+  
+  </div>
+
+      <!-- The Review Modal -->
+<div id="reviewModalID" class="reviewModal">
+
+  <!-- Review Modal content -->
+  <div class="review-modal-content" id="reviewModalContent">
+    <span class="close" id="closeID" onclick="closeModal()">&times;</span>
+    <H1 class="review-modal-header">
+      Review
+    </H1>
+    <div class="review-modal-body">
+      <body id="reviewModalBody">
+        <!-- Font Awesome Icon Library -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+    <div class="rTextBorder">
+      <form>
+        <label for="rText">Please write a review:</label><br>
+        <textarea type="text" id="fText" placeholder="Please Type here..." class="rTextClass"></textarea>
+      </form>
+      <p id="P"></p>
+    </div>
+
+      <button class="doneBut" role="button" id="submitButID" position="relative" top="70px" right="-10px">Submit</button>
+      </body>
+
+    </div>
+  </div>
+</div>
+
+
+
+      <!-- The Customer Review Modal -->
+      <div id="customerReviewModalID" class="reviewModal">
+
+        <!-- Customer Review Modal content -->
+        <div class="review-modal-content" id="reviewModalContent">
+          <span class="close" id="closeID" onclick="closeModal()">&times;</span>
+          <H1 class="review-modal-header">
+            Review
+          </H1>
+          <div class="review-modal-body">
+            <body id="reviewModalBody">
+              <!-- Font Awesome Icon Library -->
+              <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+              
+              <table class="revtableapi" id="random">
+                <thead>
+                </thead>
+                <tbody id="revdrinkBody" class="revtbody">
+                    <!-- List of drinks -->
+                </tbody>
+              </table>
+
+
+            </body>
+      
+          </div>
+        </div>
+      </div>
+      <!-- Drinks table -->
+    <table class="tableapi" id="random">
+        <thead>
+                <th>Cocktail</th>
+                <th>Catagory</th>
+
+        </thead>
+        <tbody id="drinkBody" class="tbody">
+            <!-- List of drinks -->
+        </tbody>
+      </table>
+</div>
+<script src="scripts/Search_Bar.js"></script>
+<script src="scripts/Login.js"></script>
+</body>
+</html>
